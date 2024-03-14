@@ -1,0 +1,20 @@
+4" units - 6 units in a cycle
+4" units - 168 units per rack
+
+6" - 4 units in a cycle
+6" units - 112 units per rack
+
+8" - 3 units in a cycle
+8" units - 84 units per rack
+
+10" - 2 units in a cycle 
+10" - 56 units per rack
+
+12" - 2 units in a cycle
+12" - 56 units per rack
+
+Patio Block - 336 units per rack
+Concrete Brick - 896 units per rack
+
+6" Manhole Barrels - 84 units per rack
+# block - 1,2,3, etc - 56 units per rack

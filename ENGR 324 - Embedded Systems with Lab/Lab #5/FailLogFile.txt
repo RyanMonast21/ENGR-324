@@ -1,0 +1,95 @@
+avrdude: Version 6.3-20190619
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "C:\Users\ryanm\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17\etc\avrdude.conf"
+
+         Using Port                    : COM6
+         Using Programmer              : avrisp
+         Overriding Baud Rate          : 19200
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : STK500
+         Description     : Atmel AVR ISP
+         Hardware Version: 2
+         Firmware Version: 1.18
+         Topcard         : Unknown
+         Vtarget         : 0.0 V
+         Varef           : 0.0 V
+         Oscillator      : Off
+         SCK period      : 0.1 us
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: Device signature = 0x000000 (retrying)
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: Device signature = 0x000000 (retrying)
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: Device signature = 0x000000
+avrdude: Yikes!  Invalid device signature.
+avrdude: Expected signature for ATmega328P is 1E 95 0F
+avrdude: safemode: lfuse reads as 0
+avrdude: safemode: hfuse reads as 0
+avrdude: safemode: efuse reads as 0
+avrdude: reading input file "blink_c.hex"
+avrdude: input file blink_c.hex auto detected as Intel Hex
+avrdude: writing flash (176 bytes):
+
+Writing | ################################################## | 100% 0.76s
+
+avrdude: 176 bytes of flash written
+avrdude: verifying flash memory against blink_c.hex:
+avrdude: load data flash data from input file blink_c.hex:
+avrdude: input file blink_c.hex auto detected as Intel Hex
+avrdude: input file blink_c.hex contains 176 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.56s
+
+avrdude: verifying ...
+avrdude: verification error, first mismatch at byte 0x0000
+         0x00 != 0x0c
+avrdude: verification error; content mismatch
+
+avrdude: safemode: lfuse reads as 0
+avrdude: safemode: Verify error - unable to read hfuse properly. Programmer may not be reliable.
+avrdude: safemode: lfuse reads as 0
+avrdude: safemode: hfuse reads as 0
+avrdude: safemode: efuse reads as 0
+avrdude: safemode: Fuses OK (E:00, H:00, L:00)
+
+avrdude done.  Thank you.
+
